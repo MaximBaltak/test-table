@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"> 
+    <title>Пользователи</title>
+</head>
+<body>
+    <div class="container">
+        <button class="add" id="add">Добавить</button>
+        <table id="table" class="table">
+            <thead class="table-header">
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Возраст</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="modal" id="modal">
+            <div class="flex">
+                <label for="name">Имя:</label>
+                <input id="name" type="text">
+            </div>
+            <div class="flex">
+                <label for="last-name">Фамилия:</label>
+                <input id="last-name" type="text">
+            </div>
+            <div class="flex">
+                <label for="age">Возраст:</label>
+                <input id="age"  type="number">
+            </div>
+            <button id="submit">Создать</button>
+            <button id="close" class="close">Отмена</button>
+        </div>
+    </div>
+    <script type="module" src="./js/tableApi.mjs"></script>
+    <script type="module" src="./js/render-table.mjs"></script>
+    <script type="module" src="./js/modal.mjs"></script>
+    <script type="module" src="./js/app.mjs"></script>
+    <script type="module" src="./js/main.mjs"></script>
+</body>
+</html>

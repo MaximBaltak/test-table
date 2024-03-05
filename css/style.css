@@ -1,0 +1,132 @@
+body{
+    position: relative;
+}
+th{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    height: 50px;
+}
+
+td{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    height: 50px;
+}
+
+tr{
+    position: relative;
+    border-bottom: solid 1px #faa9a9;
+    transition: all .2s;
+}
+thead > tr:last-child{
+    border-bottom: none;
+}
+tbody > tr:last-child{
+    border-bottom: none;
+}
+tbody > tr {
+    cursor: pointer;
+}
+
+.remove{
+    display: none;
+    position: absolute;
+    top: 10px;
+    border: none;
+    width: auto;
+    height: auto;
+    background: none;
+    color: #f07e7e;
+}
+
+tbody > tr:hover > .remove {
+    display: block;
+}
+.container{
+    width: 600px;
+    margin: 50px auto 0;
+}
+.container .table{
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+.container .table-header{
+    background: #ffd2d2;
+}
+
+.overlay{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.322);
+}
+.overlay .modal{
+    width: 400px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: white;
+    border-radius: 30px;
+    row-gap: 30px;
+}
+
+.modal .flex{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.modal .flex > label {
+    width: 72px;
+    text-align: end;
+}
+
+.modal .flex > input {
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border: solid 1px #faa9a9;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 14px;
+}
+.modal > button {
+    width: 200px;
+    height: 40px;
+    border: solid 1px #faa9a9;
+    outline: none;
+    background:#f07e7e;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.modal > .close{
+    border: none;
+    width: auto;
+    height: auto;
+    background: none;
+    color: #f07e7e;
+    text-decoration: underline;
+}
+.add{
+    border: none;
+    width: auto;
+    height: auto;
+    background: none;
+    color: #3699f7;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: underline;
+}
